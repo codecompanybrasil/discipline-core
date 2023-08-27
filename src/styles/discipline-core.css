@@ -1,0 +1,25 @@
+/* Bootstrap Reboot v5.3.1 */
+@import url('./Bootstrap/bootstrap-reboot.min.css');
+
+/* Importando Bootstrap Grid v5.3.1 */
+@import url('./Bootstrap/bootstrap-grid.min.css');
+
+/* Importando Google Fonts (Roboto, Lato, Source Sans 3) */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lato:wght@400;700&family=Source+Sans+3:wght@400;600;700&display=swap');
+
+/* Declaração de variáveis globais do Discipline */
+:root {
+    --source-sans-font-family: 'Source Sans 3', sans-serif;
+
+    /* Colors */
+    --accent-color: #F29E30;
+    --accent-border-color: #E38023;
+    --primary-color: #003399;
+    --primary-border-color: #0F51A6;
+    --gray: #D9D9D9;
+
+}
+
+* {
+    font-family: var(--source-sans-font-family);
+}
