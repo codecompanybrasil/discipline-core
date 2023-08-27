@@ -18,10 +18,10 @@ jobs:
         run: npm install
       
       - name: Build
-        run: npm build
+        run: npm run build
       
       - name: Pre-Publish
-        run: npm prepublishOnly
+        run: npm run prepublishOnly
 
       - name: Test
         run: npm test
