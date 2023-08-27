@@ -1,5 +1,5 @@
 import React from 'react';
-import './Button.module.css';
+import './style.css';
 
 type ButtonTypes = "link" | "button"
 type ButtonColors = "primary" | "secondary" | "accent" | "danger" | "success"
