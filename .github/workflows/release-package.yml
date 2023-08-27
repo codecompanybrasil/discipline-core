@@ -14,7 +14,7 @@ jobs:
           node-version: 16
       - run: npm ci
       
-      - name: Install dependencies
+      - name: Install Dependencies
         run: npm install
       
       - name: Build
@@ -23,7 +23,8 @@ jobs:
       - name: Pre-Publish
         run: npm prepublishOnly
 
-      - run: npm test
+      - name: Test
+        run: npm test
 
   publish-gpr:
     needs: build
