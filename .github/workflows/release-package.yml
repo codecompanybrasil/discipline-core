@@ -23,6 +23,8 @@ jobs:
       - name: Pre-Publish
         run: npm prepublishOnly
 
+      - run: npm test
+
   publish-gpr:
     needs: build
     runs-on: ubuntu-latest
