@@ -34,6 +34,7 @@
   },
   "files": [
     "dist",
+    "dist/*.css",
     "LICENSE",
     "README.md"
   ],
