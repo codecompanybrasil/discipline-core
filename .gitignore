@@ -1,3 +1,6 @@
 node_modules
 .idea
 dist
+
+# Arquivos gerados pelo projeto que não necessitam de versionamento.
+src/styles/discipline-core.min.css
