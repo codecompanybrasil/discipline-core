@@ -1,0 +1,11 @@
+/* Declaração de variáveis globais do Discipline */
+:root {
+    --source-sans-font-family: 'Source Sans 3', sans-serif;
+
+    /* Colors */
+    --accent-color: #F29E30;
+    --accent-border-color: #E38023;
+    --primary-color: #003399;
+    --primary-border-color: #0F51A6;
+    --gray: #D9D9D9;
+}
