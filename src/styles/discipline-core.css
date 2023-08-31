@@ -1,13 +1,9 @@
 /*!
- * Google Fonts (Roboto, Lato, Source Sans 3)
- */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lato:wght@400;700&family=Source+Sans+3:wght@400;600;700&display=swap');
-
-/*!
  * Discipline Core v1.0
  */
+@import url('./google-fonts.css');
 @import url('./discipline-variables.css');
 
 * {
-    font-family: var(--source-sans-font-family);
+    font-family: var(--font-family-source-sans-3);
 }
