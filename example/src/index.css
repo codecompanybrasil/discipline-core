@@ -1,0 +1,43 @@
+/* Exemplo de importação de css do discipline-core direto no css do projeto */
+@import url('../node_modules/@codecompanybrasil/discipline-core/dist/styles/discipline-core.min.css');
+
+.italic {
+    font-style: italic;
+}
+
+.wght-400 {
+    font-weight: 400;
+}
+.wght-600 {
+    font-weight: 600;
+}
+.wght-700 {
+    font-weight: 700;
+}
+
+div.lato p, div.lato h2 {
+    font-family: var(--font-family-lato);
+}
+div.roboto p, div.roboto h2 {
+    font-family: var(--font-family-roboto);
+}
+div.source-sans-3 p, div.source-sans-3 h2 {
+    font-family: var(--font-family-source-sans-3);
+}
+
+section {
+    background-color: #F0F0F0;
+    margin: 2rem 0;
+    padding: 20px;
+}
+
+section h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+hr {
+    margin: 2rem 0;
+}
