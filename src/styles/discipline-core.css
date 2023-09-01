@@ -3,7 +3,12 @@
  */
 @import url('./google-fonts.css');
 @import url('./discipline-variables.css');
+@import url('./discipline-reset.css');
+@import url('./Bootstrap/bootstrap-grid.min.css');
 
+/*!
+ * Discipline Core Definitions
+ */
 * {
     font-family: var(--font-family-source-sans-3);
 }

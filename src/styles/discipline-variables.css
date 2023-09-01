@@ -1,4 +1,6 @@
-/* Declaração de variáveis globais do Discipline */
+/*!
+ * Discipline Core Variables
+ */
 :root {
     --font-family-lato: 'Lato', sans-serif;
     --font-family-roboto: 'Roboto', sans-serif;

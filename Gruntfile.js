@@ -8,8 +8,6 @@ module.exports = function (grunt) {
                 },
                 files: {
                     'src/styles/discipline-core.min.css': [
-                        'src/styles/Bootstrap/bootstrap-reboot.min.css',
-                        'src/styles/Bootstrap/bootstrap-grid.min.css',
                         'src/styles/discipline-core.css',
                         'src/components/**/style.css',
                     ],
