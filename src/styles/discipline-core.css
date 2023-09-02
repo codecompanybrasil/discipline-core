@@ -6,6 +6,7 @@
  */
 
 @import url(./discipline-reboot.css);
+@import url('./Bootstrap/bootstrap-grid.min.css');
 
 html,
 body {
