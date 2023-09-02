@@ -1,6 +1,9 @@
 /*!
  * Discipline Core Variables
  */
+ 
+@import url('./google-fonts.css');
+
 :root {
     /* Colors */
     --dcp-accent-color: #F29E30;
