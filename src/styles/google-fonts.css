@@ -1,45 +1,8 @@
 /*!
  * Google Fonts
- * Lato: Regular 400, Bold 700
- * Roboto: Regular 400, Bold 700
  * Source Sans 3: Regular 400, Regular 400 Italic, SemiBold 600, SemiBold 600 Italic, Bold 700
  */
 
-/* Lato */
-@font-face {
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url('./GoogleFonts/Lato/Lato-Regular.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 700;
-    font-display: swap;
-    src: url('./GoogleFonts/Lato/Lato-Bold.ttf') format('truetype');
-}
-
-/* Roboto */
-@font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url('./GoogleFonts/Roboto/Roboto-Regular.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-display: swap;
-    src: url('./GoogleFonts/Roboto/Roboto-Bold.ttf') format('truetype');
-}
-
-/* Source Sans 3 */
 @font-face {
     font-family: 'Source Sans 3';
     font-style: italic;
