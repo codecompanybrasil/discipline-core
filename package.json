@@ -7,7 +7,12 @@
     "typescript",
     "discipline"
   ],
-  "author": "@codecompanybrasil",
+  "homepage": "https://www.codecompany.org/",
+  "author": {
+    "name": "@codecompanybrasil",
+    "email": "support@codecompany.org",
+    "url": "https://www.codecompany.org/"
+  },
   "license": "MIT",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
@@ -20,12 +25,10 @@
     "url": "git+https://github.com/codecompanybrasil/discipline-core.git"
   },
   "scripts": {
-    "build": "npm run build:esm && npm run build:cjs && npm run make-css-bundle && npm run copy-files",
+    "build": "npm run build:esm && npm run build:cjs && grunt",
     "build:cjs": "tsc --module commonjs --outDir dist/cjs",
     "build:esm": "tsc",
     "clean": "rimraf dist/",
-    "make-css-bundle": "grunt && copyfiles -u 1 src/styles/discipline-core.min.css dist",
-    "copy-files": "copyfiles -u 1 src/styles/GoogleFonts/**/*.{ttf,txt} dist",
     "lint": "eslint \"{**/*,*}.{js,ts,jsx,tsx}\"",
     "prepare": "npm run clean && npm run build",
     "prepublishOnly": "npm run prettier && npm run lint",
@@ -45,13 +48,13 @@
     "@types/react": "^18.2.21",
     "@typescript-eslint/eslint-plugin": "^6.4.1",
     "@typescript-eslint/parser": "^6.4.1",
-    "copyfiles": "^2.4.1",
     "eslint": "^8.47.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "grunt": "^1.6.1",
+    "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-cssmin": "^5.0.0",
     "prettier": "^3.0.2",
     "react": "^18.2.0",
