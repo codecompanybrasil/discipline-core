@@ -4,3 +4,5 @@ dist
 
 # Arquivos gerados pelo projeto que não necessitam de versionamento.
 src/styles/discipline-core.min.css
+src/styles/discipline-components.css
+src/styles/discipline-components.css.map
