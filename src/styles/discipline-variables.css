@@ -2,12 +2,24 @@
  * Discipline Core Variables
  */
 :root {
-    --font-family-source-sans-3: 'Source Sans 3', sans-serif;
 
     /* Colors */
-    --accent-color: #F29E30;
-    --accent-border-color: #E38023;
-    --primary-color: #003399;
-    --primary-border-color: #0F51A6;
-    --gray: #D9D9D9;
+    --dcp-accent-color: #F29E30;
+    --dcp-accent-border-color: #E38023;
+    --dcp-primary-color: #003399;
+    --dcp-primary-border-color: #0F51A6;
+    --dcp-gray-color: #D9D9D9;
+    --dcp-white-color: #F8F8F8;
+    --dcp-black-color: #212121;
+
+    /* Fonts*/
+    --dcp-primary-font: "Source Sans 3", sans-serif;
+
+    /* Others*/
+    --dcp-big-margin: 10px;
+    --dcp-small-margin: 5px;
+    --dcp-big-padding: 10px;
+    --dcp-small-padding: 5px;
+    --dcp-small-border-radius: 5px;
+    --dcp-big-border-radius: 10px;
 }
