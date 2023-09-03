@@ -1,17 +1,26 @@
-const sass = require('dart-sass');
+const scss = require('dart-sass')
 
 module.exports = function (grunt) {
+
     grunt.initConfig({
+        clean: {
+            build: {
+                src: [
+                    'src/styles/discipline-components.css',
+                    'dist'
+                ],
+            },
+        },
         sass: {
             options: {
-                implementation: sass,
-                sourceMap: true
+                implementation: scss,
+                sourceMap: false,
             },
             dist: {
                 files: {
                     'src/styles/discipline-components.css': ['src/components/**/style.scss']
-                }
-            }
+                },
+            },
         },
         cssmin: {
             dist: {
@@ -33,10 +42,11 @@ module.exports = function (grunt) {
         },
     })
 
-    // require('load-grunt-tasks')(grunt);
+    grunt.loadNpmTasks('grunt-contrib-clean')
     grunt.loadNpmTasks('grunt-sass')
     grunt.loadNpmTasks('grunt-contrib-cssmin')
-    grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-contrib-copy')
 
+    grunt.registerTask('clean-dist', ['clean'])
     grunt.registerTask('default', ['sass', 'cssmin', 'copy'])
 }
