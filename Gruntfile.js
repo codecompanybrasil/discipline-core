@@ -37,6 +37,7 @@ module.exports = function (grunt) {
                 files: [
                     // Copying Google Fonts
                     { expand: true, cwd: 'src/styles/', src: 'GoogleFonts/**', dest: 'dist/styles/' },
+                    // Copying Icons
                     { expand: true, cwd: 'src/', src: 'assets/**', dest: 'dist/' },
                 ],
             },
