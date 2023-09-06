@@ -6,10 +6,19 @@ module.exports = function (grunt) {
         clean: {
             build: {
                 src: [
+                    'src/styles/discipline-components.scss',
                     'src/styles/discipline-components.css',
                     'dist'
                 ],
             },
+        },
+        concat: {
+            dist: {
+                src: [
+                    'src/components/**/*.scss',
+                ],
+                dest: 'src/styles/discipline-components.scss',
+            }
         },
         sass: {
             options: {
@@ -18,7 +27,7 @@ module.exports = function (grunt) {
             },
             dist: {
                 files: {
-                    'src/styles/discipline-components.css': ['src/components/**/style.scss']
+                    'src/styles/discipline-components.css': 'src/styles/discipline-components.scss'
                 },
             },
         },
@@ -45,10 +54,11 @@ module.exports = function (grunt) {
     })
 
     grunt.loadNpmTasks('grunt-contrib-clean')
+    grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-sass')
     grunt.loadNpmTasks('grunt-contrib-cssmin')
     grunt.loadNpmTasks('grunt-contrib-copy')
 
     grunt.registerTask('clean-dist', ['clean'])
-    grunt.registerTask('default', ['sass', 'cssmin', 'copy'])
+    grunt.registerTask('default', ['concat', 'sass', 'cssmin', 'copy'])
 }
