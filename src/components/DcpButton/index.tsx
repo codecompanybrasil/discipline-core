@@ -1,38 +1,27 @@
 import React from 'react'
 
-type ButtonTypes = 'link' | 'button'
-type ButtonColors = 'primary' | 'secondary' | 'accent' | 'danger' | 'success'
+import { DcpColors } from '../../types'
 
-type ButtonProps = {
+interface DcpButtonAttribtutes extends React.ButtonHTMLAttributes<HTMLButtonElement> {
     text: string
-    type?: ButtonTypes
-    color?: ButtonColors
+    color?: DcpColors
     icon?: React.FC
     hasIcon?: boolean
-    onClick?: () => void
 }
 
 const DcpButton = ({
     text,
     type = 'button',
     color = 'primary',
-    icon: Icon,
     hasIcon,
-    onClick = () => {},
-}: ButtonProps) => {
-    if (type == 'link') {
-        return (
-            <button className={['dcp-link', color].join(' ')} onClick={onClick}>
-                {hasIcon && Icon && <Icon />}
-                <span>{text}</span>
-            </button>
-        )
-    }
+    icon: Icon,
+    ...props
+}: DcpButtonAttribtutes) => {
     return (
-        <a className={['dcp-button', color].join(' ')} onClick={onClick}>
+        <button {...props} type={type} className={['dcp-button', color].join(' ')}>
             {hasIcon && Icon && <Icon />}
             <span>{text}</span>
-        </a>
+        </button>
     )
 }
 
