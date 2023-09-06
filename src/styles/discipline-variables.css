@@ -1,7 +1,7 @@
 /*!
  * Discipline Core Variables
  */
- 
+
 @import url('./google-fonts.css');
 
 :root {
@@ -16,7 +16,7 @@
 
     /* Fonts*/
     --dcp-font-source-sans-3: "Source Sans 3", sans-serif;
-    --dcp-primary-font: var(var(--dcp-font-source-sans-3));
+    --dcp-primary-font: var(--dcp-font-source-sans-3);
 
     /* Spacing */
     --dcp-margin-sm: 5px;
