@@ -18,14 +18,14 @@
     gap: 10px;
 
     &.accent {
-        background-color: var(--accent-color);
+        background-color: var(--dcp-accent-color);
         color: var(--primary-color);
-        border: 5px solid var(--accent-border-color);
+        border: 5px solid var(--dcp-accent-border-color);
     }
 
     &.primary {
-        background-color: var(--primary-color);
+        background-color: var(--dcp-primary-color);
         color: white;
-        border: 5px solid var(--primary-border-color);
+        border: 5px solid var(--dcp-primary-border-color);
     }
 }
