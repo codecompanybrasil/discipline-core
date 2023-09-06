@@ -11,6 +11,7 @@
     margin: 2px 4px;
     cursor: pointer;
     line-height: 1.5;
+    display: inline-block;
 
     &.accent {
         background-color: var(--dcp-accent-color);
