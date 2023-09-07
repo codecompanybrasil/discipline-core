@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { DcpButton, DcpIcon, DcpLink } from '@codecompanybrasil/discipline-core'
+import { DcpButton, DcpIcon, DcpIconButton } from '@codecompanybrasil/discipline-core'
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 root.render(
@@ -22,14 +22,14 @@ root.render(
         <section id='buttons'>
             <h2>Botões</h2>
             <div>
-                <h3>Botão com cor padrão (primary)</h3>
+                <h3>DcpButton usando a tag 'button', com cor padrão (primary)</h3>
                 <DcpButton
                     text='Enviar'
                     onClick={() => confirm('Tem certeza que deseja continuar?')} />
             </div>
             <hr />
             <div>
-                <h3>Botão com cor definida (accent color)</h3>
+                <h3>DcpButton usando a tag 'button', com cor definida (accent)</h3>
                 <DcpButton
                     text='Enviar'
                     color='accent'
@@ -37,58 +37,111 @@ root.render(
             </div>
             <hr />
             <div>
-                <h3>Botão com cor definida (accent color) com ícone no slot start</h3>
+                <h3>DcpButton usando a tag 'button', com cor definida (success)</h3>
                 <DcpButton
                     text='Enviar'
-                    color='accent'
-                    onClick={() => alert('Teste de click em button')}
-                    slotStart={<DcpIcon.Filter />} />
+                    color='success'
+                    onClick={() => alert('Teste de click em button')} />
             </div>
             <hr />
             <div>
-                <h3>Botão com cor definida (accent color) com ícone no slot end</h3>
+                <h3>DcpButton usando a tag 'button', com cor definida (accent) e com ícone no slotstart</h3>
                 <DcpButton
                     text='Enviar'
                     color='accent'
                     onClick={() => alert('Teste de click em button')}
-                    slotEnd={<DcpIcon.Filter />} />
+                    slotstart={<DcpIcon.Filter />} />
+            </div>
+            <hr />
+            <div>
+                <h3>DcpButton usando a tag 'button', com cor definida (accent) e com ícone no slotend</h3>
+                <DcpButton
+                    text='Enviar'
+                    color='accent'
+                    onClick={() => alert('Teste de click em button')}
+                    slotend={<DcpIcon.Filter />} />
             </div>
         </section>
 
         <section id='link'>
             <h2>Links</h2>
             <div>
-                <h3>Link com cor padrão (primary) e target _blank</h3>
-                <DcpLink
+                <h3>DcpButton usando a tag 'a', com cor padrão (primary) e target _blank</h3>
+                <DcpButton
+                    tag='a'
                     text='Link externo com target blank'
                     href='https://www.google.com/'
                     target='_blank' />
             </div>
             <hr />
             <div>
-                <h3>Link com cor definida (accent color)</h3>
-                <DcpLink
+                <h3>DcpButton usando a tag 'a', com cor definida (accent)</h3>
+                <DcpButton
+                    tag='a'
                     text='Link com Onclick'
                     color='accent'
                     onClick={() => alert('Teste de click em link')} />
             </div>
             <hr />
             <div>
-                <h3>Link com cor definida (accent color) com ícone no slot start</h3>
-                <DcpLink
-                    text='Enviar'
-                    color='accent'
-                    onClick={() => alert('Teste de click em button')}
-                    slotStart={<DcpIcon.Filter />} />
+                <h3>DcpButton usando a tag 'a', com cor definida (success)</h3>
+                <DcpButton
+                    tag='a'
+                    text='Link com Onclick'
+                    color='success'
+                    onClick={() => alert('Teste de click em link')} />
             </div>
             <hr />
             <div>
-                <h3>Link com cor definida (accent color) com ícone no slot end</h3>
-                <DcpLink
+                <h3>DcpButton usando a tag 'a', com cor definida (accent) e com ícone no slotstart</h3>
+                <DcpButton
+                    tag='a'
                     text='Enviar'
                     color='accent'
                     onClick={() => alert('Teste de click em button')}
-                    slotEnd={<DcpIcon.Filter />} />
+                    slotstart={<DcpIcon.Filter />} />
+            </div>
+            <hr />
+            <div>
+                <h3>DcpButton usando a tag 'a', com cor definida (accent) e com ícone no slotend</h3>
+                <DcpButton
+                    tag='a'
+                    text='Enviar'
+                    color='accent'
+                    onClick={() => alert('Teste de click em button')}
+                    slotend={<DcpIcon.Filter />} />
+            </div>
+        </section>
+
+        <section id='link'>
+            <h2>Links</h2>
+            <div>
+                <h3>DpcIconButton usando a tag 'button' e com cor padrão (transparent)</h3>
+                <DcpIconButton
+                    onClick={() => alert('Teste de click em link')}>
+                    <DcpIcon.Filter />
+                </DcpIconButton>
+            </div>
+            <hr />
+            <div>
+                <h3>DpcIconButton usando a tag 'a' com cor padrão (transparent)</h3>
+                <DcpIconButton
+                    tag='a'
+                    href='https://www.google.com/'
+                    target='_blank'>
+                    <DcpIcon.Filter />
+                </DcpIconButton>
+            </div>
+            <hr />
+            <div>
+                <h3>DpcIconButton com cor definida (accent)</h3>
+                <DcpIconButton
+                    tag='a'
+                    color='accent'
+                    href='https://www.google.com/'
+                    target='_blank'>
+                    <DcpIcon.Filter />
+                </DcpIconButton>
             </div>
         </section>
     </React.StrictMode>,
