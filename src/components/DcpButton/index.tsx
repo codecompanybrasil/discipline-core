@@ -6,16 +6,16 @@ interface DcpButtonAttribtutes extends React.ButtonHTMLAttributes<HTMLButtonElem
     tag?: any
     text: string
     color?: DcpColors
-    slotStart?: any
-    slotEnd?: any
+    slotstart?: any
+    slotend?: any
 }
 
 interface DcpLinkAttribtutes extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
     tag?: any
     text: string
     color?: DcpColors
-    slotStart?: any
-    slotEnd?: any
+    slotstart?: any
+    slotend?: any
 }
 
 const DcpButton = ({
@@ -27,9 +27,9 @@ const DcpButton = ({
 }: DcpButtonAttribtutes | DcpLinkAttribtutes) => {
     return (
         <Tag {...props} type={type} className={['dcp-button', color].join(' ')}>
-            {props.slotStart && <span className='slot-start'>{props.slotStart}</span>}
+            {props.slotstart && <span className='slot-start'>{props.slotstart}</span>}
             <span>{text}</span>
-            {props.slotEnd && <span className='slot-end'>{props.slotEnd}</span>}
+            {props.slotend && <span className='slot-end'>{props.slotend}</span>}
         </Tag>
     )
 }
