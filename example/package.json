@@ -14,6 +14,6 @@
         "react-dom": "^18.2.0"
     },
     "dependencies": {
-        "@codecompanybrasil/discipline-core": "^1.0.9"
+        "@codecompanybrasil/discipline-core": "^1.0.13"
     }
 }

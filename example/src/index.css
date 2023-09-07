@@ -17,6 +17,10 @@
     font-weight: 700;
 }
 
+body {
+    padding: 12px;
+}
+
 section.font-examples h2,
 section.font-examples p {
     font-family: var(--font-family-source-sans-3);
