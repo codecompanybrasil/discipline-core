@@ -26,6 +26,12 @@
         border: 5px solid var(--dcp-primary-border-color);
     }
 
+    &.success {
+        background-color: var(--dcp-success-color);
+        color: var(--dcp-white-color);
+        border: 5px solid var(--dcp-success-border-color);
+    }
+
     .dcp-icon {
         height: 24px;
     }
