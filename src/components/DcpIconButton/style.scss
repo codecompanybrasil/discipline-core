@@ -1,0 +1,44 @@
+/*!
+ * Discipline component: DcpIconButton
+ */
+
+.dcp-icon-button {
+    border-radius: 6px;
+    padding: 6px 12px;
+    margin: 2px 4px;
+    cursor: pointer;
+    line-height: 1.5;
+    align-items: center;
+    user-select: none;
+
+    /* Default Color */
+    border: 5px solid transparent;
+    background-color: transparent;
+
+    &.accent {
+        background-color: var(--dcp-accent-color);
+        border-color: var(--dcp-accent-border-color);
+    }
+
+    &.primary {
+        background-color: var(--dcp-primary-color);
+        border-color: var(--dcp-primary-border-color);
+    }
+
+    &.success {
+        background-color: var(--dcp-success-color);
+        border-color: var(--dcp-success-border-color);
+    }
+
+    .dcp-icon {
+        height: 24px;
+    }
+}
+
+button.dcp-icon-button {
+    display: flex;
+}
+
+a.dcp-icon-button {
+    display: inline-flex;
+}
