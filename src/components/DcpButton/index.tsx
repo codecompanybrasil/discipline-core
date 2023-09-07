@@ -12,9 +12,9 @@ interface DcpButtonAttribtutes extends React.ButtonHTMLAttributes<HTMLButtonElem
 const DcpButton = ({ text, type = 'button', color = 'primary', ...props }: DcpButtonAttribtutes) => {
     return (
         <button {...props} type={type} className={['dcp-button', color].join(' ')}>
-            {props.slotStart}
+            {props.slotStart && <span className='slot-start'>{props.slotStart}</span>}
             <span>{text}</span>
-            {props.slotEnd}
+            {props.slotEnd && <span className='slot-end'>{props.slotEnd}</span>}
         </button>
     )
 }
