@@ -26,9 +26,21 @@
         color: white;
         border: 5px solid var(--dcp-primary-border-color);
     }
-    
-    .dcp-icon { height: 24px; }
 
-    .slot-start { margin-right: 6px; }
-    .slot-end { margin-left: 6px; }
+    .dcp-icon {
+        height: 24px;
+    }
+
+    [class^='slot-'] {
+        display: flex;
+        align-items: center;
+
+        &[class$='start'] {
+            margin-right: 6px;
+        }
+
+        &[class$='end'] {
+            margin-left: 6px;
+        }
+    }
 }
