@@ -5,15 +5,16 @@ import { DcpColors } from '../../types'
 interface DcpLinkAttribtutes extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
     text: string
     color?: DcpColors
-    icon?: React.FC
-    hasIcon?: boolean
+    slotStart?: any
+    slotEnd?: any
 }
 
-const DcpLink = ({ text, color = 'primary', hasIcon, icon: Icon, ...props }: DcpLinkAttribtutes) => {
+const DcpLink = ({ text, color = 'primary', ...props }: DcpLinkAttribtutes) => {
     return (
         <a {...props} className={['dcp-link', color].join(' ')}>
-            {hasIcon && Icon && <Icon />}
+            {props.slotStart && <span className='slot-start'>{props.slotStart}</span>}
             <span>{text}</span>
+            {props.slotEnd && <span className='slot-end'>{props.slotEnd}</span>}
         </a>
     )
 }

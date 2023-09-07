@@ -11,6 +11,8 @@
     margin: 2px 4px;
     cursor: pointer;
     line-height: 1.5;
+    display: flex;
+    align-items: center;
 
     &.accent {
         background-color: var(--dcp-accent-color);
@@ -23,4 +25,9 @@
         color: white;
         border: 5px solid var(--dcp-primary-border-color);
     }
+
+    .dpc-icon { height: 24px; }
+
+    .slot-start { margin-right: 6px; }
+    .slot-end { margin-left: 6px; }
 }

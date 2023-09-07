@@ -5,22 +5,16 @@ import { DcpColors } from '../../types'
 interface DcpButtonAttribtutes extends React.ButtonHTMLAttributes<HTMLButtonElement> {
     text: string
     color?: DcpColors
-    icon?: React.FC
-    hasIcon?: boolean
+    slotStart?: any
+    slotEnd?: any
 }
 
-const DcpButton = ({
-    text,
-    type = 'button',
-    color = 'primary',
-    hasIcon,
-    icon: Icon,
-    ...props
-}: DcpButtonAttribtutes) => {
+const DcpButton = ({ text, type = 'button', color = 'primary', ...props }: DcpButtonAttribtutes) => {
     return (
         <button {...props} type={type} className={['dcp-button', color].join(' ')}>
-            {hasIcon && Icon && <Icon />}
+            {props.slotStart}
             <span>{text}</span>
+            {props.slotEnd}
         </button>
     )
 }
