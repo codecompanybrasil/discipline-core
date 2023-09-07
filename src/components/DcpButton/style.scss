@@ -11,8 +11,8 @@
     margin: 2px 4px;
     cursor: pointer;
     line-height: 1.5;
-    display: flex;
     align-items: center;
+    user-select: none;
 
     &.accent {
         background-color: var(--dcp-accent-color);
@@ -22,7 +22,7 @@
 
     &.primary {
         background-color: var(--dcp-primary-color);
-        color: white;
+        color: var(--dcp-white-color);
         border: 5px solid var(--dcp-primary-border-color);
     }
 
@@ -42,4 +42,12 @@
             margin-left: 6px;
         }
     }
+}
+
+button.dcp-button {
+    display: flex;
+}
+
+a.dcp-button {
+    display: inline-flex;
 }
