@@ -29,10 +29,10 @@
     "build:cjs": "tsc --module commonjs --outDir dist/cjs",
     "build:esm": "tsc",
     "clean": "grunt clean-dist",
-    "lint": "eslint \"{src,tests,example/src}/**/*.{js,ts,jsx,tsx}\"",
+    "lint": "eslint \"{src,tests}/**/*.{js,ts,jsx,tsx}\"",
     "prepare": "npm run clean && npm run build",
     "prepublishOnly": "npm run prettier && npm run lint",
-    "prettier": "prettier --write \"{src,tests,example/src}/**/*.{js,ts,jsx,tsx}\"",
+    "prettier": "prettier --write \"{src,tests}/**/*.{js,ts,jsx,tsx}\"",
     "test": "exit 0"
   },
   "files": [
