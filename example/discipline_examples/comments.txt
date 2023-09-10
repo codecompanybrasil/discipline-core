@@ -1,0 +1,5 @@
+Temos 1 arquivo .discipline para cada tipo de questão suportada:
+
+Aqui estão as relações:
+
+1.discipline - Questão Alternativa Simples (com/sem imagem)

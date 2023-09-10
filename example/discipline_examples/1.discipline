@@ -1,0 +1,195 @@
+{
+    "sections": [
+        {
+            "section": [
+                {
+                    "items": [
+                        {
+                            "type": "question",
+                            "typeQuestion": "Single-Choice",
+                            "id": "1",
+                            "statement": {
+                                "type": "text",
+                                "content": "Enunciado da minha questão exemplo objetiva"
+                            },
+                            "utilities": [
+                                {
+                                    "source": "https://static.wikia.nocookie.net/herois/images/c/ca/Monsters_at_Work_Characters_03.jpg/revision/latest/scale-to-width-down/1000?cb=20210920113314&path-prefix=pt-br",
+                                    "caption": "Imagem do Mike Whaz"
+                                }
+                            ],
+                            "options": [
+                                {
+                                    "text": "A",
+                                    "value": 20
+                                },
+                                {
+                                    "text": "B",
+                                    "value": 40
+                                },
+                                {
+                                    "text": "C",
+                                    "value": 60
+                                }
+                            ]
+                        },
+                        {
+                            "type": "question",
+                            "typeQuestion": "Single-Choice",
+                            "id": "2",
+                            "statement": {
+                                "type": "image",
+                                "content": "https://static.wikia.nocookie.net/herois/images/c/ca/Monsters_at_Work_Characters_03.jpg/revision/latest/scale-to-width-down/1000?cb=20210920113314&path-prefix=pt-br",
+                                "caption": "Imagem do Mike Whaz"
+                            },
+                            "options": [
+                                {
+                                    "text": "A",
+                                    "value": 20
+                                },
+                                {
+                                    "text": "B",
+                                    "value": 40
+                                },
+                                {
+                                    "text": "C",
+                                    "value": 60
+                                }
+                            ]
+                        },
+                        {
+                            "type": "question",
+                            "typeQuestion": "Single-Choice",
+                            "id": "3",
+                            "statement": "Enunciado da minha questão exemplo objetiva",
+                            "utilities": [
+                                {
+                                    "source": "https://static.wikia.nocookie.net/herois/images/c/ca/Monsters_at_Work_Characters_03.jpg/revision/latest/scale-to-width-down/1000?cb=20210920113314&path-prefix=pt-br",
+                                    "caption": "Imagem do Mike Whaz",
+                                    "statement": "TEXTO 1"
+                                },
+                                {
+                                    "source": "https://static.wikia.nocookie.net/herois/images/c/ca/Monsters_at_Work_Characters_03.jpg/revision/latest/scale-to-width-down/1000?cb=20210920113314&path-prefix=pt-br",
+                                    "caption": "Imagem do Mike Whaz",
+                                    "statement": "TEXTO 2"
+                                }
+                            ],
+                            "options": [
+                                {
+                                    "text": "A",
+                                    "value": 20
+                                },
+                                {
+                                    "text": "B",
+                                    "value": 40
+                                },
+                                {
+                                    "text": "C",
+                                    "value": 60
+                                }
+                            ]
+                        },
+                        {
+                            "type": "group",
+                            "typeQuestion": "Single-Choice",
+                            "id": "4",
+                            "statement": {
+                                "type": "text",
+                                "content": "Enunciado da minha questão exemplo objetiva"
+                            },
+                            "questions": [
+                                {
+                                    "type": "question",
+                                    "typeQuestion": "Single-Choice",
+                                    "id": "1",
+                                    "statement": {
+                                        "type": "text",
+                                        "content": "Enunciado da pergunta A"
+                                    },
+                                    "options": [
+                                        {
+                                            "text": "A",
+                                            "value": "Valor da pergunta A"
+                                        },
+                                        {
+                                            "text": "B",
+                                            "value": "Valor da pergunta B"
+                                        },
+                                        {
+                                            "text": "C",
+                                            "value": "Valor da pergunta C"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "question",
+                                    "typeQuestion": "Single-Choice",
+                                    "id": "2",
+                                    "statement": {
+                                        "type": "text",
+                                        "content": "Enunciado da pergunta B"
+                                    },
+                                    "options": [
+                                        {
+                                            "text": "A",
+                                            "value": "Valor da pergunta A"
+                                        },
+                                        {
+                                            "text": "B",
+                                            "value": "Valor da pergunta B"
+                                        },
+                                        {
+                                            "text": "C",
+                                            "value": "Valor da pergunta C"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "options": [
+                                {
+                                    "text": "A",
+                                    "value": 20
+                                },
+                                {
+                                    "text": "B",
+                                    "value": 40
+                                },
+                                {
+                                    "text": "C",
+                                    "value": 60
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "answers": [
+        {
+            "questionId": "1",
+            "value": "A"
+        },
+        {
+            "questionId": "2",
+            "value": "A"
+        },
+        {
+            "questionId": "3",
+            "value": "B"
+        },
+        {
+            "questionId": "4",
+            "questions": [
+                {
+                    "questionId": "1",
+                    "value": "B"
+                },
+                {
+                    "questionId": "2",
+                    "value": "C"
+                }
+            ]
+        }
+    ]
+}
