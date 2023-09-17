@@ -116,7 +116,7 @@ root.render(
         <section id='link'>
             <h2>Links</h2>
             <div>
-                <h3>DpcIconButton usando a tag 'button' e com cor padrão (transparent)</h3>
+                <h3>DcpIconButton usando a tag 'button' e com cor padrão (transparent)</h3>
                 <DcpIconButton
                     onClick={() => alert('Teste de click em link')}>
                     <DcpIcon.Filter />
@@ -124,7 +124,7 @@ root.render(
             </div>
             <hr />
             <div>
-                <h3>DpcIconButton usando a tag 'a' com cor padrão (transparent)</h3>
+                <h3>DcpIconButton usando a tag 'a' com cor padrão (transparent)</h3>
                 <DcpIconButton
                     tag='a'
                     href='https://www.google.com/'
@@ -134,7 +134,7 @@ root.render(
             </div>
             <hr />
             <div>
-                <h3>DpcIconButton com cor definida (accent)</h3>
+                <h3>DcpIconButton com cor definida (accent)</h3>
                 <DcpIconButton
                     tag='a'
                     color='accent'

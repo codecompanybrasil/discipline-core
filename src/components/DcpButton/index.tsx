@@ -25,8 +25,10 @@ const DcpButton = ({
     color = 'primary',
     ...props
 }: DcpButtonAttribtutes | DcpLinkAttribtutes) => {
+    const cssClasses = ['dcp-button', color, props.className].join(' ')
+
     return (
-        <Tag {...props} type={type} className={['dcp-button', color].join(' ')}>
+        <Tag {...props} type={type} className={cssClasses}>
             {props.slotstart && <span className='slot-start'>{props.slotstart}</span>}
             <span>{text}</span>
             {props.slotend && <span className='slot-end'>{props.slotend}</span>}

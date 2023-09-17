@@ -19,8 +19,10 @@ const DcpIconButton = ({
     color,
     ...props
 }: DcpButtonAttribtutes | DcpLinkAttribtutes) => {
+    const cssClasses = ['dcp-icon-button', color, props.className].join(' ')
+
     return (
-        <Tag {...props} type={type} className={['dcp-icon-button', color].join(' ')}>
+        <Tag {...props} type={type} className={cssClasses}>
             {children}
         </Tag>
     )
