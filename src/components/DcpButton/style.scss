@@ -2,37 +2,26 @@
  * Discipline component: DcpButton
  */
 
+@import "../../styles/mixins/_border-size.mixin.scss";
+@import "../../styles/mixins/_color.mixin.scss";
+
 .dcp-button {
     font-family: var(--dcp-primary-font);
     font-weight: 600;
     font-size: 1rem;
-    border-radius: 6px;
-    padding: 6px 12px;
+    border-radius: var(--dcp-border-radius-sm);
+    padding: 0.6rem;
     margin: 2px 4px;
     cursor: pointer;
     line-height: 1.5;
     align-items: center;
     user-select: none;
 
-    &.accent {
-        background-color: var(--dcp-accent-color);
-        color: var(--primary-color);
-        border: 5px solid var(--dcp-accent-border-color);
-    }
-
-    &.primary {
-        background-color: var(--dcp-primary-color);
-        color: var(--dcp-white-color);
-        border: 5px solid var(--dcp-primary-border-color);
-    }
-
-    &.success {
-        background-color: var(--dcp-success-color);
-        color: var(--dcp-white-color);
-        border: 5px solid var(--dcp-success-border-color);
-    }
+    border-width: var(--dcp-border-width-sm);
+    border-style: solid;
 
     .dcp-icon {
+        width: 24px;
         height: 24px;
     }
 
@@ -48,6 +37,9 @@
             margin-left: 6px;
         }
     }
+
+    @include color-mix;
+    @include border-size-mix;
 }
 
 button.dcp-button {

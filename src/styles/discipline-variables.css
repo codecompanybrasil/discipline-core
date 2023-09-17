@@ -28,6 +28,8 @@
     --dcp-padding-lg: 10px;
 
     /* Others */
+    --dcp-border-width-sm: 1px;
+    --dcp-border-width-lg: 5px;
     --dcp-border-radius-sm: 5px;
     --dcp-border-radius-lg: 10px;
 }
