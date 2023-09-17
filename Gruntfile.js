@@ -4,21 +4,12 @@ module.exports = function (grunt) {
 
     grunt.initConfig({
         clean: {
-            build: {
-                src: [
-                    'src/styles/discipline-components.scss',
-                    'src/styles/discipline-components.css',
-                    'dist'
-                ],
+            before: {
+                src: ['dist'],
             },
-        },
-        concat: {
-            dist: {
-                src: [
-                    'src/components/**/*.scss',
-                ],
-                dest: 'src/styles/discipline-components.scss',
-            }
+            after: {
+                src: ['src/styles/discipline-core.css'],
+            },
         },
         sass: {
             options: {
@@ -27,17 +18,14 @@ module.exports = function (grunt) {
             },
             dist: {
                 files: {
-                    'src/styles/discipline-components.css': 'src/styles/discipline-components.scss'
+                    'src/styles/discipline-core.css': 'src/styles/discipline-core.scss'
                 },
             },
         },
         cssmin: {
             dist: {
                 files: {
-                    'dist/styles/discipline-core.min.css': [
-                        'src/styles/discipline-core.css',
-                        'src/styles/discipline-components.css',
-                    ],
+                    'dist/styles/discipline-core.min.css': 'src/styles/discipline-core.css',
                 },
             },
         },
@@ -54,11 +42,10 @@ module.exports = function (grunt) {
     })
 
     grunt.loadNpmTasks('grunt-contrib-clean')
-    grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-sass')
     grunt.loadNpmTasks('grunt-contrib-cssmin')
     grunt.loadNpmTasks('grunt-contrib-copy')
 
-    grunt.registerTask('clean-dist', ['clean'])
-    grunt.registerTask('default', ['concat', 'sass', 'cssmin', 'copy'])
+    grunt.registerTask('clean-dist', ['clean:before'])
+    grunt.registerTask('default', ['sass', 'cssmin', 'copy', 'clean:after'])
 }

@@ -2,9 +2,11 @@
  * Discipline component: DcpIconButton
  */
 
+@import '../../styles/mixins/color.mixin.scss';
+
 .dcp-icon-button {
-    border-radius: 6px;
-    padding: 6px 12px;
+    border-radius: var(--dcp-border-radius-sm);
+    padding: 0.6rem;
     margin: 2px 4px;
     cursor: pointer;
     line-height: 1.5;
@@ -12,27 +14,16 @@
     user-select: none;
 
     /* Default Color */
-    border: 5px solid transparent;
+    border: var(--dcp-border-width-sm) solid transparent;
     background-color: transparent;
 
-    &.accent {
-        background-color: var(--dcp-accent-color);
-        border-color: var(--dcp-accent-border-color);
-    }
-
-    &.primary {
-        background-color: var(--dcp-primary-color);
-        border-color: var(--dcp-primary-border-color);
-    }
-
-    &.success {
-        background-color: var(--dcp-success-color);
-        border-color: var(--dcp-success-border-color);
-    }
-
     .dcp-icon {
+        width: 24px;
         height: 24px;
     }
+
+    @include color-mix;
+    @include border-size-mix;
 }
 
 button.dcp-icon-button {

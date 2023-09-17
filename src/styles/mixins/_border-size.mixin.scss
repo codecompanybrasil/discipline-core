@@ -1,0 +1,9 @@
+@mixin border-size-mix {
+    &.border-sm {
+        border-width: var(--dcp-border-width-sm);
+    }
+
+    &.border-lg {
+        border-width: var(--dcp-border-width-lg);
+    }
+}

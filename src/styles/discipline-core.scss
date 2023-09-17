@@ -1,12 +1,12 @@
-/*! @codecompanybrasil/discipline-core - v1.0.4 - build 2023-09-02
+/*! @codecompanybrasil/discipline-core - v1.0.17 - build 2023-09-17-1822
  * https://www.codecompany.org/
  * Copyright (c) 2023 @codecompanybrasil; Licensed MIT 
  *
  * Discipline Core CSS
  */
 
-@import url(./discipline-reboot.css);
-@import url('./Bootstrap/bootstrap-grid.min.css');
+@import './discipline-reboot.css';
+@import './Bootstrap/bootstrap-grid.min.css';
 
 html,
 body {
@@ -55,8 +55,13 @@ li {
     padding: var(--dcp-padding-sm);
 }
 
-/* Utilities */
+// Components
+@import '../components/DcpButton/style.scss';
+@import '../components/DcpIcon/style.scss';
+@import '../components/DcpIconButton/style.scss';
 
+
+/* Utilities */
 .cursor-pointer {
     cursor: pointer;
 }
