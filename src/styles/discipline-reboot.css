@@ -8,3 +8,8 @@
 @import url('./discipline-variables.css');
 @import url('./normalize.css');
 
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
