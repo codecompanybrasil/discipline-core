@@ -17,11 +17,6 @@
     border: var(--dcp-border-width-sm) solid transparent;
     background-color: transparent;
 
-    .dcp-icon {
-        width: 24px;
-        height: 24px;
-    }
-
     @include color-mix;
     @include border-size-mix;
 }
