@@ -37,10 +37,17 @@ img {
 }
 
 input {
-    border: 1px solid var(--dcp-black-color);
+    border: 2px solid var(--dcp-black-color);
+    background-color: var(--dcp-white-color);
     border-radius: var(--dcp-border-radius-sm);
     padding: var(--dcp-padding-sm);
     /* width: 100%; */
+}
+
+input:focus {
+    outline: 0;
+    border-color: var(--dcp-primary-border-color);
+    box-shadow: 0 0 0 0.25rem rgba(15, 81, 166, .50);
 }
 
 ul {
@@ -60,8 +67,4 @@ li {
 @import '../components/DcpIcon/style.scss';
 @import '../components/DcpIconButton/style.scss';
 
-
-/* Utilities */
-.cursor-pointer {
-    cursor: pointer;
-}
+@import './utilities.css';
