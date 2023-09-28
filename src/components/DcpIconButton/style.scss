@@ -8,7 +8,6 @@
     border-radius: var(--dcp-border-radius-sm);
     padding: 0.6rem;
     margin: 2px 4px;
-    cursor: pointer;
     line-height: 1.5;
     align-items: center;
     user-select: none;
@@ -16,6 +15,10 @@
     /* Default Color */
     border: var(--dcp-border-width-sm) solid transparent;
     background-color: transparent;
+
+    &:not(:disabled) {
+        cursor: pointer;
+    }
 
     @include color-mix;
     @include border-size-mix;

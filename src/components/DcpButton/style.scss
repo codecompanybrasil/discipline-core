@@ -12,13 +12,16 @@
     border-radius: var(--dcp-border-radius-sm);
     padding: 0.6rem;
     margin: 2px 4px;
-    cursor: pointer;
     line-height: 1.5;
     align-items: center;
     user-select: none;
 
     border-width: var(--dcp-border-width-sm);
     border-style: solid;
+
+    &:not(:disabled) {
+        cursor: pointer;
+    }
 
     .dcp-icon {
         width: 24px;
