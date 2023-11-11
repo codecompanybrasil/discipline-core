@@ -23,25 +23,17 @@ root.render(
             <h2>Botões</h2>
             <div>
                 <h3>DcpButton usando a tag 'button', com cor padrão (primary)</h3>
-                <DcpButton
-                    text='Enviar'
-                    onClick={() => confirm('Tem certeza que deseja continuar?')} />
+                <DcpButton text='Enviar' onClick={() => confirm('Tem certeza que deseja continuar?')} />
             </div>
             <hr />
             <div>
                 <h3>DcpButton usando a tag 'button', com cor definida (accent)</h3>
-                <DcpButton
-                    text='Enviar'
-                    color='accent'
-                    onClick={() => alert('Teste de click em button')} />
+                <DcpButton text='Enviar' color='accent' onClick={() => alert('Teste de click em button')} />
             </div>
             <hr />
             <div>
                 <h3>DcpButton usando a tag 'button', com cor definida (success)</h3>
-                <DcpButton
-                    text='Enviar'
-                    color='success'
-                    onClick={() => alert('Teste de click em button')} />
+                <DcpButton text='Enviar' color='success' onClick={() => alert('Teste de click em button')} />
             </div>
             <hr />
             <div>
@@ -50,7 +42,8 @@ root.render(
                     text='Enviar'
                     color='accent'
                     onClick={() => alert('Teste de click em button')}
-                    slotstart={<DcpIcon.Filter />} />
+                    slotstart={<DcpIcon.Filter />}
+                />
             </div>
             <hr />
             <div>
@@ -59,7 +52,8 @@ root.render(
                     text='Enviar'
                     color='accent'
                     onClick={() => alert('Teste de click em button')}
-                    slotend={<DcpIcon.Filter />} />
+                    slotend={<DcpIcon.Filter />}
+                />
             </div>
         </section>
 
@@ -71,7 +65,8 @@ root.render(
                     tag='a'
                     text='Link externo com target blank'
                     href='https://www.google.com/'
-                    target='_blank' />
+                    target='_blank'
+                />
             </div>
             <hr />
             <div>
@@ -80,7 +75,8 @@ root.render(
                     tag='a'
                     text='Link com Onclick'
                     color='accent'
-                    onClick={() => alert('Teste de click em link')} />
+                    onClick={() => alert('Teste de click em link')}
+                />
             </div>
             <hr />
             <div>
@@ -89,7 +85,8 @@ root.render(
                     tag='a'
                     text='Link com Onclick'
                     color='success'
-                    onClick={() => alert('Teste de click em link')} />
+                    onClick={() => alert('Teste de click em link')}
+                />
             </div>
             <hr />
             <div>
@@ -99,7 +96,8 @@ root.render(
                     text='Enviar'
                     color='accent'
                     onClick={() => alert('Teste de click em button')}
-                    slotstart={<DcpIcon.Filter />} />
+                    slotstart={<DcpIcon.Filter />}
+                />
             </div>
             <hr />
             <div>
@@ -109,7 +107,8 @@ root.render(
                     text='Enviar'
                     color='accent'
                     onClick={() => alert('Teste de click em button')}
-                    slotend={<DcpIcon.Filter />} />
+                    slotend={<DcpIcon.Filter />}
+                />
             </div>
         </section>
 
@@ -117,29 +116,21 @@ root.render(
             <h2>Links</h2>
             <div>
                 <h3>DcpIconButton usando a tag 'button' e com cor padrão (transparent)</h3>
-                <DcpIconButton
-                    onClick={() => alert('Teste de click em link')}>
+                <DcpIconButton onClick={() => alert('Teste de click em link')}>
                     <DcpIcon.Filter />
                 </DcpIconButton>
             </div>
             <hr />
             <div>
                 <h3>DcpIconButton usando a tag 'a' com cor padrão (transparent)</h3>
-                <DcpIconButton
-                    tag='a'
-                    href='https://www.google.com/'
-                    target='_blank'>
+                <DcpIconButton tag='a' href='https://www.google.com/' target='_blank'>
                     <DcpIcon.Filter />
                 </DcpIconButton>
             </div>
             <hr />
             <div>
                 <h3>DcpIconButton com cor definida (accent)</h3>
-                <DcpIconButton
-                    tag='a'
-                    color='accent'
-                    href='https://www.google.com/'
-                    target='_blank'>
+                <DcpIconButton tag='a' color='accent' href='https://www.google.com/' target='_blank'>
                     <DcpIcon.Filter />
                 </DcpIconButton>
             </div>
