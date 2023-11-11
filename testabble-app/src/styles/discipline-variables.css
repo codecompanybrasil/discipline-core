@@ -1,0 +1,37 @@
+/*!
+ * Discipline Core Variables
+ */
+
+@import url('./google-fonts.css');
+
+:root {
+    /* Colors */
+    --dcp-accent-color: #F29E30;
+    --dcp-accent-border-color: #E38023;
+    --dcp-primary-color: #003399;
+    --dcp-primary-border-color: #0F51A6;
+    --dcp-success-color: #2ECC71;
+    --dcp-success-border-color: #27AE60;
+    --dcp-danger-color: #E74C3C;
+    --dcp-danger-border-color: #C0392B;
+    --dcp-gray-color: #D9D9D9;
+    --dcp-white-color: #F8F8F8;
+    --dcp-black-color: #212121;
+
+    /* Fonts*/
+    --dcp-font-source-sans-3: "Source Sans 3", sans-serif;
+    --dcp-primary-font: var(--dcp-font-source-sans-3);
+
+    /* Spacing */
+    --dcp-margin-sm: 5px;
+    --dcp-margin-lg: 10px;
+
+    --dcp-padding-sm: 5px;
+    --dcp-padding-lg: 10px;
+
+    /* Others */
+    --dcp-border-width-sm: 1px;
+    --dcp-border-width-lg: 5px;
+    --dcp-border-radius-sm: 5px;
+    --dcp-border-radius-lg: 10px;
+}

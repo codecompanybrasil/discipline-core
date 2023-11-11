@@ -1,0 +1,15 @@
+/*! @codecompanybrasil/discipline-core - v1.0.4 - build 2023-09-02
+ * https://www.codecompany.org/
+ * Copyright (c) 2023 @codecompanybrasil; Licensed MIT
+ *
+ * Discipline Core Reboot CSS
+ */
+
+@import url('./discipline-variables.css');
+@import url('./normalize.css');
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}

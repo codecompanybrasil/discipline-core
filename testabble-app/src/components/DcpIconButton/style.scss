@@ -1,0 +1,33 @@
+/*!
+ * Discipline component: DcpIconButton
+ */
+
+@import '../../styles/mixins/color.mixin.scss';
+
+.dcp-icon-button {
+    border-radius: var(--dcp-border-radius-sm);
+    padding: 0.6rem;
+    margin: 2px 4px;
+    line-height: 1.5;
+    align-items: center;
+    user-select: none;
+
+    /* Default Color */
+    border: var(--dcp-border-width-sm) solid transparent;
+    background-color: transparent;
+
+    &:not(:disabled) {
+        cursor: pointer;
+    }
+
+    @include color-mix;
+    @include border-size-mix;
+}
+
+button.dcp-icon-button {
+    display: flex;
+}
+
+a.dcp-icon-button {
+    display: inline-flex;
+}

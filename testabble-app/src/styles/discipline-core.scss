@@ -1,0 +1,70 @@
+/*! @codecompanybrasil/discipline-core - v1.0.17 - build 2023-09-17-1822
+ * https://www.codecompany.org/
+ * Copyright (c) 2023 @codecompanybrasil; Licensed MIT 
+ *
+ * Discipline Core CSS
+ */
+
+@import './discipline-reboot.css';
+@import './Bootstrap/bootstrap-grid.min.css';
+
+html,
+body {
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    font-family: var(--dcp-primary-font);
+}
+
+a {
+    color: var(--dcp-black-color);
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 3.2em;
+    line-height: 1.1;
+}
+
+p,
+h2 {
+    margin: 0;
+}
+
+img {
+    user-select: none;
+}
+
+input {
+    border: 2px solid var(--dcp-black-color);
+    background-color: var(--dcp-white-color);
+    border-radius: var(--dcp-border-radius-sm);
+    padding: var(--dcp-padding-sm);
+    /* width: 100%; */
+}
+
+input:focus {
+    outline: 0;
+    border-color: var(--dcp-primary-border-color);
+    box-shadow: 0 0 0 0.25rem rgba(15, 81, 166, .50);
+}
+
+ul {
+    list-style: none;
+    border: 1px solid #ccc;
+    border-radius: var(--dcp-border-radius-sm);
+    background-color: var(--dcp-white-color);
+    /* width: 100%; */
+}
+
+li {
+    padding: var(--dcp-padding-sm);
+}
+
+// Components
+@import '../components/DcpButton/style.scss';
+@import '../components/DcpIcon/style.scss';
+@import '../components/DcpIconButton/style.scss';
+
+@import './utilities.css';
