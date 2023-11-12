@@ -1,11 +1,11 @@
 import React from 'react'
-import discipline_baseline from '../../assets/logos/discipline_baseline.png'
-import logo_discipline_trans_azul from '../../assets/logos/logo_discipline_trans_azul.png'
-import logo_discipline_trans_preto from '../../assets/logos/logo_discipline_trans_preto.png'
-import logo_discipline from '../../assets/logos/logo_discipline.png'
-import logo_sem_padding from '../../assets/logos/logo_sem_padding.png'
-import logo_trans from '../../assets/logos/logo_trans.png'
-import logo from '../../assets/logos/logo.png'
+import discipline_baseline from '../../../assets/logos/discipline_baseline.png'
+import logo_discipline_trans_azul from '../../../assets/logos/logo_discipline_trans_azul.png'
+import logo_discipline_trans_preto from '../../../assets/logos/logo_discipline_trans_preto.png'
+import logo_discipline from '../../../assets/logos/logo_discipline.png'
+import logo_sem_padding from '../../../assets/logos/logo_sem_padding.png'
+import logo_trans from '../../../assets/logos/logo_trans.png'
+import logo from '../../../assets/logos/logo.png'
 
 interface DcpLogoProps extends React.ImgHTMLAttributes<HTMLImageElement> {
     width?: string
