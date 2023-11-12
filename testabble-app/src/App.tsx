@@ -1,14 +1,14 @@
 import "./index.css";
-import DcpButton from "./components/DcpButton";
+import { DcpButton } from "@codecompanybrasil/discipline-core";
 import { Puzzle, Menu, ExportDocument, Google } from "./components/DcpIcon";
 import DcpIconButton from "./components/DcpIconButton";
-import { Logo, DisciplineBaseline, LogoDiscipline, LogoDisciplineTransAzul, LogoDisciplineTransPreto, LogoSemPadding, LogoTrans } from "./components/DcpLogo";
+import { Logo, DisciplineBaseline, LogoDiscipline, LogoDisciplineTransAzul, LogoDisciplineTransPreto, LogoSemPadding, LogoTrans } from './components/DcpLogo';
 
 function App() {
 
     return (
         <>
-            <DcpButton text="Teste" type="accent" fontSize="20px" />
+            <DcpButton text="Teste" color="success" fontSize="20px" />
             <Puzzle color="black" width={50} />
             <DcpIconButton color="primary">
                 <Menu width={50} color="white" />

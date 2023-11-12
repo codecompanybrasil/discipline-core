@@ -9,7 +9,7 @@ interface DcpButtonAttribtutes extends React.ButtonHTMLAttributes<HTMLButtonElem
     slotstart?: any
     slotend?: any,
     className?: string,
-    type: string | undefined,
+    type?: string,
     fontSize?: string,
     border?: string
 }
@@ -21,7 +21,7 @@ interface DcpLinkAttribtutes extends React.AnchorHTMLAttributes<HTMLAnchorElemen
     slotstart?: any
     slotend?: any,
     className?: string,
-    type: string | undefined,
+    type?: string,
     fontSize?: string,
     border?: string
 }
