@@ -3,6 +3,7 @@ import discipline_baseline from '../../../assets/logos/discipline_baseline.png'
 import logo_discipline_trans_azul from '../../../assets/logos/logo_discipline_trans_azul.png'
 import logo_discipline_trans_preto from '../../../assets/logos/logo_discipline_trans_preto.png'
 import logo_discipline from '../../../assets/logos/logo_discipline.png'
+import logo_discipline_trans from '../../../assets/logos/logo_discipline_trans.png'
 import logo_sem_padding from '../../../assets/logos/logo_sem_padding.png'
 import logo_trans from '../../../assets/logos/logo_trans.png'
 import logo from '../../../assets/logos/logo.png'
@@ -46,6 +47,10 @@ const LogoTrans = ({ width, height, ...props }: DcpLogoProps) => {
     return <DcpLogo src={logo_trans} width={width} height={height} {...props} />
 }
 
+const LogoDisciplineTrans = ({ width, height, ...props }: DcpLogoProps) => {
+    return <DcpLogo src={logo_discipline_trans} width={width} height={height} {...props} />
+}
+
 export {
     Logo,
     DisciplineBaseline,
@@ -53,5 +58,6 @@ export {
     LogoDisciplineTransPreto,
     LogoDiscipline,
     LogoSemPadding,
+    LogoDisciplineTrans,
     LogoTrans,
 }

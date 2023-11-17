@@ -7,7 +7,7 @@ import firstPage from '../../../assets/icons/black/icons8-double-left-100.png'
 import firstPageDisabled from '../../../assets/icons/gray/icons8-double-left-100.png'
 import lastPage from '../../../assets/icons/black/icons8-double-right-100.png'
 import lastPageDisabled from '../../../assets/icons/gray/icons8-double-right-100.png'
-import menu from '../../../assets/icons/black/icons8-more-100.png'
+import more from '../../../assets/icons/black/icons8-more-100.png'
 import next from '../../../assets/icons/black/icons8-forward-100.png'
 import nextDisabled from '../../../assets/icons/gray/icons8-forward-100.png'
 import puzzleBlack from '../../../assets/icons/black/icons8-puzzle-100.png'
@@ -49,6 +49,17 @@ import calendarioBlack from '../../../assets/icons/black/icons8-calendário-100.
 import calendarioWhite from '../../../assets/icons/white/icons8-calendário-100.png'
 import enter from '../../../assets/icons/black/icons8-enter-50-black.png'
 import google from '../../../assets/icons/colored/icons8-google-48-colored.png'
+import menuBlack from '../../../assets/icons/black/icons8-menu-50-black.png'
+import menuWhite from '../../../assets/icons/white/icons8-menu-50-white.png'
+import tiktokBlack from '../../../assets/icons/black/icons8-tik-tok-50.png'
+import tiktokWhite from '../../../assets/icons/white/icons8-tik-tok-50-white.png'
+import verified from '../../../assets/icons/colored/icons8-verified-50.png'
+import instagramBlack from '../../../assets/icons/black/icons8-instagram-50-black.png'
+import instagramWhite from '../../../assets/icons/white/icons8-instagram-50-white.png'
+import githubBlack from '../../../assets/icons/black/icons8-github-60-black.png'
+import githubWhite from '../../../assets/icons/white/icons8-tik-tok-50-white.png'
+import cronometroBlack from '../../../assets/icons/black/icons8-stopwatch-64-black.png'
+import cronometroWhite from '../../../assets/icons/white/icons8-stopwatch-64-white.png'
 
 interface DcpIconAttributes extends React.ImgHTMLAttributes<HTMLImageElement> {
     color?: 'black' | 'white' | 'colored'
@@ -117,12 +128,33 @@ const Lupa = ({ color = 'white', ...props }: DcpIconAttributes) => {
     return <DcpIcon src={color == 'white' ? lupaWhite : lupaBlack} {...props} />
 }
 
+const Menu = ({ color = 'white', ...props }: DcpIconAttributes) => {
+    return <DcpIcon src={color == 'white' ? menuWhite : menuBlack} {...props} />
+}
+
 const Calendar = ({ color = 'white', ...props }: DcpIconAttributes) => {
     return <DcpIcon src={color == 'white' ? calendarioWhite : calendarioBlack} {...props} />
 }
 
+const TikTok = ({ color = 'white', ...props }: DcpIconAttributes) => {
+    return <DcpIcon src={color == 'white' ? tiktokWhite : tiktokBlack} {...props} />
+}
+
+const Instagram = ({ color = 'white', ...props }: DcpIconAttributes) => {
+    return <DcpIcon src={color == 'white' ? instagramWhite : instagramBlack} {...props} />
+}
+
+const GitHub = ({ color = 'white', ...props }: DcpIconAttributes) => {
+    return <DcpIcon src={color == 'white' ? githubWhite : githubBlack} {...props} />
+}
+
+const Cronometro = ({ color = 'white', ...props }: DcpIconAttributes) => {
+    return <DcpIcon src={color == 'white' ? cronometroWhite : cronometroBlack} {...props} />
+}
+
 const Enter = (props: DcpIconAttributes) => <DcpIcon src={enter} {...props} />
 const Google = (props: DcpIconAttributes) => <DcpIcon src={google} {...props} />
+const Verified = (props: DcpIconAttributes) => <DcpIcon src={verified} {...props} />
 
 const Mac = (props: DcpIconAttributes) => <DcpIcon src={mac} {...props} />
 const Linux = (props: DcpIconAttributes) => <DcpIcon src={linux} {...props} />
@@ -133,7 +165,7 @@ const EyeClosed = (props: DcpIconAttributes) => <DcpIcon src={eyeClosed} {...pro
 const Download = (props: DcpIconAttributes) => <DcpIcon src={downloadBlack} {...props} />
 
 const Filter = (props: DcpIconAttributes) => <DcpIcon src={filter} {...props} />
-const Menu = (props: DcpIconAttributes) => <DcpIcon src={menu} {...props} />
+const More = (props: DcpIconAttributes) => <DcpIcon src={more} {...props} />
 
 const Back = (props: DcpIconAttributes) => <DcpIcon src={back} {...props} />
 const BackDisabled = (props: DcpIconAttributes) => <DcpIcon src={backDisabled} {...props} />
@@ -148,7 +180,7 @@ export {
     Puzzle,
     Taskboard,
     Filter,
-    Menu,
+    More,
     ArrowDown,
     ExportDocument,
     AumentarFonte,
@@ -170,7 +202,13 @@ export {
     Calendar,
     Windows,
     Enter,
+    Menu,
     Google,
+    TikTok,
+    Instagram,
+    GitHub,
+    Cronometro,
+    Verified,
 
     // Pagination
     Back,
