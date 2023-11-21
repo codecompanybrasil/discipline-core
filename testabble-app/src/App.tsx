@@ -1,6 +1,8 @@
 import "./index.css";
-import { Bar } from "./components/DcpBar";
+// import { Bar } from "./components/DcpBar";
+import { Bar } from "@codecompanybrasil/discipline-core/dist/esm/components/DcpBar";
 import { DcpButton } from "@codecompanybrasil/discipline-core";
+import { Taskboard } from "@codecompanybrasil/discipline-core/dist/esm/components/DcpIcon";
 
 function App() {
 
@@ -17,6 +19,7 @@ function App() {
                 90%
             </p>
             <DcpButton text="opa" />
+            <Taskboard />
         </>
     );
 }

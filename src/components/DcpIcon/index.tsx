@@ -60,6 +60,10 @@ import githubBlack from '../../../assets/icons/black/icons8-github-60-black.png'
 import githubWhite from '../../../assets/icons/white/icons8-tik-tok-50-white.png'
 import cronometroBlack from '../../../assets/icons/black/icons8-stopwatch-64-black.png'
 import cronometroWhite from '../../../assets/icons/white/icons8-stopwatch-64-white.png'
+import settingsBlack from '../../../assets/icons/black/icons8-settings-64-black.png'
+import settingsWhite from '../../../assets/icons/white/icons8-settings-64-white.png'
+import colecaoBlack from '../../../assets/icons/black/icons8-book-stack-50-black.png'
+import colecaoWhite from '../../../assets/icons/white/icons8-book-stack-50-white.png'
 
 interface DcpIconAttributes extends React.ImgHTMLAttributes<HTMLImageElement> {
     color?: 'black' | 'white' | 'colored'
@@ -152,6 +156,14 @@ const Cronometro = ({ color = 'white', ...props }: DcpIconAttributes) => {
     return <DcpIcon src={color == 'white' ? cronometroWhite : cronometroBlack} {...props} />
 }
 
+const Settings = ({ color = 'white', ...props }: DcpIconAttributes) => {
+    return <DcpIcon src={color == 'white' ? settingsWhite : settingsBlack} {...props} />
+}
+
+const Colecao = ({ color = 'white', ...props }: DcpIconAttributes) => {
+    return <DcpIcon src={color == 'white' ? colecaoWhite : colecaoBlack} {...props} />
+}
+
 const Enter = (props: DcpIconAttributes) => <DcpIcon src={enter} {...props} />
 const Google = (props: DcpIconAttributes) => <DcpIcon src={google} {...props} />
 const Verified = (props: DcpIconAttributes) => <DcpIcon src={verified} {...props} />
@@ -209,6 +221,8 @@ export {
     GitHub,
     Cronometro,
     Verified,
+    Settings,
+    Colecao,
 
     // Pagination
     Back,
