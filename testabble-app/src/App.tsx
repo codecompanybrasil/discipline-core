@@ -2,9 +2,15 @@ import "./index.css";
 // import { Bar } from "./components/DcpBar";
 import { Bar } from "@codecompanybrasil/discipline-core/dist/esm/components/DcpBar";
 import { DcpButton } from "@codecompanybrasil/discipline-core";
-import { Taskboard } from "@codecompanybrasil/discipline-core/dist/esm/components/DcpIcon";
+import { Taskboard } from "./components/DcpIcon";
+import DcpMobileButton from "./components/DcpMobileButton";
 
 function App() {
+
+    const handleClickTest = () => {
+        alert("Função de teste")
+    }
+
 
     return (
         <>
@@ -18,6 +24,9 @@ function App() {
                 <Bar percent={60} height="20px" width="300px" colorProgress="green" colorNoProgress="red" />
                 90%
             </p>
+            <DcpMobileButton onClick={handleClickTest}>
+                <Taskboard width={30} height={30} />
+            </DcpMobileButton>
             <DcpButton text="opa" />
             <Taskboard />
         </>

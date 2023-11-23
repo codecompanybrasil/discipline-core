@@ -1,0 +1,45 @@
+/*!
+ * Discipline component: DcpButton
+ */
+
+ @import "../../styles/mixins/_border-size.mixin.scss";
+ @import "../../styles/mixins/_color.mixin.scss";
+ 
+ .dcp-mobile-button {
+     font-family: var(--dcp-primary-font);
+     font-weight: 600;
+    //  width: 50px;
+    //  height: 50px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 1rem;
+     border-radius: 50%;
+     padding: 10px;
+     margin: 2px 4px;
+     line-height: 1.5;
+     align-items: center;
+     user-select: none;
+     border-width: var(--dcp-border-width-sm);
+     border-style: solid;
+ 
+     &:not(:disabled) {
+         cursor: pointer;
+     }
+ 
+     .dcp-icon {
+         width: 24px;
+         height: 24px;
+     }
+ 
+     @include color-mix;
+     @include border-size-mix;
+ }
+ 
+ button.dcp-button {
+     display: flex;
+ }
+ 
+ a.dcp-button {
+     display: inline-flex;
+ }

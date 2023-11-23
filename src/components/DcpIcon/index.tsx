@@ -74,7 +74,13 @@ interface DcpIconAttributes extends React.ImgHTMLAttributes<HTMLImageElement> {
 const DcpIcon = (props: DcpIconAttributes) => {
     const cssClasses = props.className ? ['dcp-icon', props.className].join(' ') : 'dcp-icon'
 
-    return <img className={cssClasses} {...props} />
+    return (
+        <img
+            className={cssClasses}
+            {...props}
+            style={{ width: props.width ?? '24px', height: props.height ?? '24px' }}
+        />
+    )
 }
 
 const Puzzle = ({ color = 'white', ...props }: DcpIconAttributes) => {
