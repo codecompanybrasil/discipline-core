@@ -3,6 +3,7 @@ import "./index.css";
 import { Bar } from "@codecompanybrasil/discipline-core/dist/esm/components/DcpBar";
 import { DcpButton } from "@codecompanybrasil/discipline-core";
 import { Taskboard } from "./components/DcpIcon";
+import DcpSelect from "./components/DcpSelect";
 import DcpMobileButton from "./components/DcpMobileButton";
 
 function App() {
@@ -29,6 +30,14 @@ function App() {
             </DcpMobileButton>
             <DcpButton text="opa" />
             <Taskboard />
+            <DcpSelect color="accent" options={[
+                {
+                    text: "Option 1"
+                },
+                {
+                    text: "Option 2"
+                }
+            ]} />
         </>
     );
 }

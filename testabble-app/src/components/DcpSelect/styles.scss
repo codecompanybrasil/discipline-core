@@ -1,0 +1,97 @@
+/*!
+ * Discipline component: DcpButton
+ */
+
+ @import "../../styles/mixins/_border-size.mixin.scss";
+ @import "../../styles/mixins/_color.mixin.scss";
+ 
+//  .dcp-select-area {
+//     font-family: var(--dcp-primary-font);
+//     font-weight: 600;
+//     font-size: 1rem;
+//     border-radius: var(--dcp-border-radius-sm);
+//     padding: 0.6rem;
+//     margin: 2px 4px;
+//     line-height: 1.5;
+//     align-items: center;
+//     user-select: none;
+
+//     border-width: var(--dcp-border-width-sm);
+//     border-style: solid;
+ 
+//  }
+.dcp-select-area {
+    position: relative;
+
+    .dcp-button, .select-options {
+        font-family: var(--dcp-primary-font);
+        font-weight: 600;
+        font-size: 1rem;
+        border-radius: var(--dcp-border-radius-sm);
+        padding: 0.6rem;
+        margin: 2px 4px;
+        line-height: 1.5;
+        align-items: center;
+        user-select: none;
+    
+        border-width: var(--dcp-border-width-sm);
+        border-style: solid;
+    
+        &:not(:disabled) {
+            cursor: pointer;
+        }
+    
+        .dcp-icon {
+            width: 24px;
+            height: 24px;
+        }
+    
+        [class^='slot-'] {
+            display: flex;
+            align-items: center;
+    
+            &[class$='start'] {
+                margin-right: 6px;
+            }
+    
+            &[class$='end'] {
+                margin-left: 6px;
+            }
+        }
+    
+        @include color-mix;
+        @include border-size-mix;
+    }
+
+    .option {
+        text-align: start;
+        padding-right: 20px !important;
+
+        @include color-mix;
+    }
+
+    button.dcp-button {
+        display: flex;
+    }
+    
+    a.dcp-button {
+        display: inline-flex;
+    }
+}
+
+.select-options {
+    position: absolute;
+    top: 60px;
+    align-items: flex-start !important;
+    flex-direction: column; 
+    margin-top: 2px;
+}
+
+.divisor {
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: white;
+}
