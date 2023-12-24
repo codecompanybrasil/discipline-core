@@ -16,6 +16,7 @@ interface DcpSelectAttributes {
 interface DcpSelectOption {
     text: string
     option?: string
+    callback: () => void
 }
 
 const DcpSelect = ({
@@ -37,9 +38,10 @@ const DcpSelect = ({
         setTagValue(text ?? options[0].text)
     }, [])
 
-    const handleOptionClick = (value: string) => {
+    const handleOptionClick = (value: string, callback: () => void) => {
         setTagValue(value)
         handleSelectDisplay()
+        callback()
     }
 
     const handleSelectDisplay = () => {
@@ -62,7 +64,10 @@ const DcpSelect = ({
             >
                 {options.map((item, key) => (
                     <div key={key} data-id={key}>
-                        <div className='option' onClick={() => handleOptionClick(item.option ?? item.text)}>
+                        <div
+                            className='option'
+                            onClick={() => handleOptionClick(item.option ?? item.text, item.callback ?? (() => {}))}
+                        >
                             {item.text}
                         </div>
                         {key < options.length - 1 && <div className={'divisor'}></div>}

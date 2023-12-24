@@ -81,10 +81,9 @@
 
 .select-options {
     position: absolute;
-    top: 60px;
     align-items: flex-start !important;
     flex-direction: column; 
-    margin-top: 2px;
+    z-index: 2;
 }
 
 .divisor {
